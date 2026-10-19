@@ -26,50 +26,38 @@
 
     </header>
     <main>
+     <div class="contact">
         <form>
-            <fieldset>
+            
                 <legend>Informations personnelles</legend>
+                <br>
                 <div>
-                    <label for="Nom">Votre Nom :</label>
+                    <label for="Nom">Votre nom complet :</label>
                     <input type="text"  id="Nom" name="Nom" placeholder="Nom Prenom">
-                </div>
+                </div> <br>
                 <div>
                     <label for="Date">Votre date de naissance :</label>
                     <input type="date"  name="date" max="2008-12-31">
-                </div>
+                </div><br>
                 <div>
-                    <label for="sexe">sexe</label>
+                    <label for="sexe">Votre sexe:</label>
                     <select name="sexe" id="sexe">
                         <option value="sexe">Femme</option>
                         <option value="sexe">Homme</option>
                     </select>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Info compte</legend>
-                <div>
-                    <label for="username">Nom d'utilisateur :</label>
-                    <input type="text" id="username" name="username" minlength="5" placeholder="Nom d'utilisateur">
-                </div>
-                <div>
-                    <label for="password">Mot de passe :</label>
-                    <input type="password" id="password" name="password" placeholder="Mot de passe">
-                </div>
-                <div>
-                    <label for="mail">Email :</label>
-                    <input type="mail" id="mail" name="mail" placeholder="nomprenom@gmail.com">
-                </div>
-                <div>
-                    <label><input type="checkbox" name="accepter" required>Accepter les conditions général</label>
-                </div>
-            </fieldset>
-            <label for="message">Votre message</label>
+                </div><br>
+           
+     
+           
+            <label for="message">Votre message:</label>
             <textarea id="message" name="message"></textarea>
 
-            
-            <button type="submit">envoyer</button>
-            <button type="reset">effacer</button>
+           <div class="buttons"> 
+            <button type="submit">Envoyer</button>
+            <button type="reset">Effacer</button>
+            </div>
         </form>
+    </div>
     </main>
     
     <footer>
