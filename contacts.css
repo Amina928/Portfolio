@@ -115,8 +115,14 @@ h1{
 legend {
     color: #8b0d0d;       /* couleur texte */
     font-weight: bold;    /* mettre en gras */
-    font-size: 1.2rem;    /* agrandir */
+    font-size: 1.6rem;    /* agrandir */
     padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
 }
 label {
     color: #531515;  /* Couleur du texte */
@@ -132,6 +138,13 @@ button {
     cursor: pointer;
     transition: 0.15s ease-in-out;
     margin: 5px;
+    
+}
+.buttons{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -175,6 +188,9 @@ form{
     .container{
         flex-wrap: wrap;
     }
+    .contact{
+        display: flex;
+    }
 }
 @media (max-width:1200px){
   .bare {
@@ -190,4 +206,30 @@ form{
     .container{
         flex-wrap: wrap;
     }
+    .contact{
+        display:flex;
+    }
+}
+
+
+.contact{
+    
+    background-color: #e6bfbf;
+    color:#fff;
+    display: flex;
+    width: 80%;          /* prend 90% de l'espace disponible */
+    max-width: 700px;    /* ne dépasse pas 400px sur grand écran */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; /* texte aligné à gauche */
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin:10%
+}
+.contact form{
+display:flex;
+flex-direction:column;
+padding:40px;
+border: 1px solid #9b4747;
+
 }
