@@ -13,19 +13,65 @@
     box-sizing: border-box;
 }
 
+.bare {
+    width: 100%;
+    background: #b85151;        /* couleur de fond */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    border: #b85151;
+    border-radius: 5px;
+    
+}
+
+/* --- Liens dans la navbar --- */
+.bare a {
+    color: #fbe8e8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 14px;
+    transition: 0.3s ease;
+    border-radius: 8px;
+    text-decoration: underline;
+}
+
+/* Hover */
+.bare a:hover {
+    background: #aa4a4a;
+    color: white;
+}
+
+/* Page actuelle (active) */
+.bare a.active {
+    background: white;
+    color: #d85c5c;
+}
 body {
     font-family: Inter, system-ui, Arial;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin:  auto;
     padding: 20px;
 }
 
 /* Header styles */
 .tete {
     background: #ffffff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:  Arial, sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+     
 }
-
+header h1{
+    color:#853d3d;
+    margin-top:40px;
+    margin-bottom: 40px;
+    
+}
 
 /* Titres */
 h1 {
@@ -76,7 +122,7 @@ p {
 
 .footer{
     background: column(to right, #f08686, #f8f9fa);
-    
+    color:#5a2424
 }
 
 
@@ -130,63 +176,16 @@ p {
 /* Effet hover optionnel */
 .skills-list li:hover {
     color: rgb(0, 0, 0);
+    transform: translateY(2px);
 }
 
-.bare {
-    width: 100%;
-    background: #b85151;        /* couleur de fond */
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    position: sticky;
-    top: 0;
-    border: #b85151;
-    border-radius: 5px;
-    
-}
 
-.bare {
-    width: 100%;
-    background: #b85151;        /* couleur de fond */
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    position: sticky;
-    top: 0;
-    border: #b85151;
-    border-radius: 5px;
-    
-}
 
-/* --- Liens dans la navbar --- */
-.bare a {
-    color: #fbe8e8;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 8px 14px;
-    transition: 0.3s ease;
-    border-radius: 8px;
-    text-decoration: underline;
-}
 
-/* Hover */
-.bare a:hover {
-    background: #aa4a4a;
-    color: white;
-}
-
-/* Page actuelle (active) */
-.bare a.active {
-    background: white;
-    color: #d85c5c;
-}
 /* --- RESPONSIVE --- */
 @media (max-width: 700px) {
     .bare {
-        flex-wrap: wrap;
+     
         gap: 10px;
         padding: 10px 0;
     }
